@@ -1,7 +1,7 @@
 package com.company;
 
 
-public class Fichier extends DisqueDur  {
+public class Fichier extends Element  {
     String nom;
     int taille;
     Fichier(String nom,int taille){
