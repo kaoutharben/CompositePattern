@@ -2,27 +2,27 @@ package com.company;
 
 import java.util.ArrayList;
 
-public class Repertoire extends DisqueDur {
+public class Repertoire extends Element {
     String nom;
-    ArrayList<DisqueDur> disqueDurs;
+    ArrayList<Element> elements;
    Repertoire(String nom){
         this.nom=nom;
     }
-    public void add(DisqueDur disqueDur){
-       disqueDurs.add(disqueDur);
+    public void add(Element element){
+       elements.add(element);
     }
-    public void remove(DisqueDur disqueDur){
-       disqueDurs.remove(disqueDur);
+    public void remove(Element element){
+       elements.remove(element);
     }
-    public DisqueDur getElement(int i ){
-       return disqueDurs.get(i);
+    public Element getElement(int i ){
+       return elements.get(i);
     }
     public String getNom(){
        return nom;
     }
     public int getTaille(){
        int taille=0;
-        for (DisqueDur e:disqueDurs) {
+        for (Element e:elements) {
             taille+=e.getTaille();
         }
 
@@ -30,7 +30,7 @@ public class Repertoire extends DisqueDur {
     }
     public void show(){
        System.out.println("Repertoir : "+this.getNom()+" Taille: "+this.getTaille());
-        for (DisqueDur e : disqueDurs
+        for (Element e : elements
              ) {
             e.show();
 
