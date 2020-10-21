@@ -1,13 +1,13 @@
 package com.company;
 
-public abstract class DisqueDur {
-    public void add(DisqueDur disqueDur){
+public abstract class Element {
+    public void add(Element element){
         throw new UnsupportedOperationException();
     }
-    public void remove(DisqueDur disqueDur){
+    public void remove(Element element){
         throw new UnsupportedOperationException();
     }
-    public void getElement(DisqueDur disqueDur){
+    public void getElement(Element element){
         throw new UnsupportedOperationException();
     }
 
