@@ -7,7 +7,7 @@ public abstract class Element {
     public void remove(Element element){
         throw new UnsupportedOperationException();
     }
-    public void getElement(Element element){
+    public Element getElement(int i ){
         throw new UnsupportedOperationException();
     }
 
